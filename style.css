@@ -18,3 +18,16 @@ Template: astra
 a.score {
   font-size: 22px;
 }
+
+/* This corrects WooComerce's responsive column gap weirdness. */
+@media (max-width: 544px) {
+  .woocommerce-page[class*=columns-] ul.products li.product:nth-child(n), .woocommerce[class*=columns-] ul.products li.product:nth-child(n) {
+      margin-right: 0px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 545px) {
+  .woocommerce-page[class*=columns-] ul.products li.product:nth-child(n), .woocommerce[class*=columns-] ul.products li.product:nth-child(n) {
+      margin-right: 0px;
+  }
+}
