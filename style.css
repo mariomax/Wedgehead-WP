@@ -19,6 +19,19 @@ a.score {
   font-size: 22px;
 }
 
+#fbuilder h4 {
+  color: #ffd602;
+}
+
+#fbuilder label {
+  font-size: 18px;
+}
+
+#fbuilder .one_column label,
+#fbuilder p {
+  font-size: 16px;
+}
+
 /* This corrects WooComerce's responsive column gap weirdness. */
 @media (max-width: 544px) {
   .woocommerce-page[class*=columns-] ul.products li.product:nth-child(n), .woocommerce[class*=columns-] ul.products li.product:nth-child(n) {
