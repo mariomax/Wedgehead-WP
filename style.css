@@ -19,6 +19,22 @@ a.score {
   font-size: 22px;
 }
 
+#wpforms-1534-field_13-container .wpforms-payment-total {
+  color: #55dbf9;
+  font-size: 3em;
+}
+
+#wpforms-1534-field_19-container button,
+div.wpforms-container-full .wpforms-form button[type=submit] {
+  background-color: #DC64F7;
+  border: none;
+  border-radius: 3px;
+  color: #FFF;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
 /* This corrects WooComerce's responsive column gap weirdness. */
 @media (max-width: 544px) {
   .woocommerce-page[class*=columns-] ul.products li.product:nth-child(n), .woocommerce[class*=columns-] ul.products li.product:nth-child(n) {
@@ -29,5 +45,11 @@ a.score {
 @media (max-width: 768px) and (min-width: 545px) {
   .woocommerce-page[class*=columns-] ul.products li.product:nth-child(n), .woocommerce[class*=columns-] ul.products li.product:nth-child(n) {
       margin-right: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .elementor-element.elementor-products-grid ul.products {
+    grid-template-columns: 1fr;
   }
 }
