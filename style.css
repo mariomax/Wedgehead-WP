@@ -10,6 +10,12 @@ Text Domain: wedgie-child
 Template: astra
 */
 
+/* Home */
+.hours .elementor-text-editor p {
+  margin-bottom: 0;
+}
+
+/* Footer */
 .footer-logo img {
   max-height: 70px;
   width: auto;
@@ -17,6 +23,65 @@ Template: astra
 
 a.score {
   font-size: 22px;
+}
+
+/* Order button in navigation */
+nav.elementor-nav-menu--main a span.order-in-menu {
+  color: #fff;
+  font-family: "Cabin", Sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+nav.elementor-nav-menu--main a span.order-in-menu:hover {
+  color: #ffd602;
+}
+
+.elementor-nav-menu--dropdown ul li a span.glf-button-default {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Menu page */
+#menu-button .elementor-widget-container .elementor-shortcode a,
+#reserve-button .elementor-widget-container .elementor-shortcode span {
+  background: #dc64f7;
+  background-color: #dc64f7 !important;
+  border-radius: 3px;
+  color: #fff;
+  font-family: 'Cabin', sans-serif;
+  font-size: 22px;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#menu-button .elementor-widget-container .elementor-shortcode,
+#reserve-button .elementor-widget-container .elementor-shortcode {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+#menu-button .elementor-widget-container .elementor-shortcode a:hover,
+#reserve-button .elementor-widget-container .elementor-shortcode span:hover {
+  background: #ffd602;
+  color: #030303;
+}
+
+#gloria-menu .elementor-widget-container .elementor-shortcode .glf-mor-restaurant-menu-wrapper h3 {
+  border-bottom: 2px solid #fff;
+  font-size: 24px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+#gloria-menu .elementor-widget-container .elementor-shortcode .glf-mor-restaurant-menu-wrapper .glf-mor-restaurant-menu-item .glf-mor-restaurant-menu-item-inner h5.glf-mor-restaurant-menu-item-name {
+  color: #55dbf9;
+  font-size: 20px;
 }
 
 #wpforms-1534-field_13-container .wpforms-payment-total {
@@ -35,21 +100,61 @@ div.wpforms-container-full .wpforms-form button[type=submit] {
   text-transform: uppercase;
 }
 
-/* This corrects WooComerce's responsive column gap weirdness. */
+/* Reservations */
+.page-id-2258 .elementor-widget-container .woocommerce .price {
+  display: none !important;
+}
+
+.page-id-2258 .elementor-widget-container .woocommerce .astra-shop-summary-wrap .ast-woo-shop-product-description p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.elementor-widget-container .woocommerce .astra-shop-summary-wrap .ast-woo-product-category {
+  display: none !important;
+}
+
+.elementor-widget-woocommerce-product-content h4 {
+  font-size: 24px !important;
+}
+
+.elementor-widget-woocommerce-product-content span.minimum {
+  color: #55dbf9;
+  font-size: 22px;
+}
+
+.elementor-widget-container .price .duration:before {
+  content: "deposit per" !important;
+  margin-right: .25em !important;
+}
+
+/* This corrects WooComerce's responsive column gap wierdness. */
 @media (max-width: 544px) {
-  .woocommerce-page[class*=columns-] ul.products li.product:nth-child(n), .woocommerce[class*=columns-] ul.products li.product:nth-child(n) {
-      margin-right: 0px;
+  .woocommerce-page[class*=columns-] ul.products li.product:nth-child(n),
+  .woocommerce[class*=columns-] ul.products li.product:nth-child(n) {
+    margin-right: 0px;
   }
 }
 
 @media (max-width: 768px) and (min-width: 545px) {
-  .woocommerce-page[class*=columns-] ul.products li.product:nth-child(n), .woocommerce[class*=columns-] ul.products li.product:nth-child(n) {
-      margin-right: 0px;
+  .woocommerce-page[class*=columns-] ul.products li.product:nth-child(n),
+  .woocommerce[class*=columns-] ul.products li.product:nth-child(n) {
+    margin-right: 0px;
   }
 }
 
 @media (max-width: 767px) {
   .elementor-element.elementor-products-grid ul.products {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-id-2258 .elementor-widget-container .woocommerce .astra-shop-summary-wrap .ast-woo-shop-product-description p {
+    font-size: 16px;
+  }
+
+  .elementor-widget-woocommerce-product-content h4 {
+    font-size: 26px !important;
   }
 }
