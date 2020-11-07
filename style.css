@@ -123,9 +123,8 @@ div.wpforms-container-full .wpforms-form button[type=submit] {
   font-size: 22px;
 }
 
-.elementor-widget-container .price .duration:before {
-  content: "deposit per" !important;
-  margin-right: .25em !important;
+.elementor-widget-container .price .duration {
+  display: none !important;
 }
 
 /* This corrects WooComerce's responsive column gap wierdness. */
