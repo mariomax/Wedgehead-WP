@@ -26,11 +26,19 @@ a.score {
 }
 
 /* Order button in navigation */
-nav.elementor-nav-menu--main a span.order-in-menu {
-  color: #fff;
-  font-family: "Cabin", Sans-serif;
-  font-size: 20px;
-  font-weight: 600;
+#navigation-widget .elementor-widget-container nav.elementor-nav-menu--main a span.order-in-menu {
+  color: #fff !important;
+  font-family: "Cabin", Sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+}
+
+#navigation-widget .elementor-widget-container nav.elementor-nav-menu--main a span.order-in-menu span.glf-button {
+  background-color: transparent !important;
+  font-family: "Cabin", Sans-serif !important;
+  font-size: 20px !important;
+  padding: 0 !important;
+  font-weight: 600 !important;
 }
 
 nav.elementor-nav-menu--main a span.order-in-menu:hover {
@@ -43,11 +51,19 @@ nav.elementor-nav-menu--main a span.order-in-menu:hover {
   text-transform: uppercase;
 }
 
+/* Merch page */
+#shop-grid span.ast-shop-product-out-of-stock {
+  color: #000;
+  font-weight: 600;
+  font-size: 24px;
+  font-style: italic;
+}
+
 /* Menu page */
 #menu-button .elementor-widget-container .elementor-shortcode a,
 #reserve-button .elementor-widget-container .elementor-shortcode span {
-  background: #dc64f7;
-  background-color: #dc64f7 !important;
+  background: #F66F9B;
+  background-color: #F66F9B !important;
   border-radius: 3px;
   color: #fff;
   font-family: 'Cabin', sans-serif;
@@ -91,7 +107,7 @@ nav.elementor-nav-menu--main a span.order-in-menu:hover {
 
 #wpforms-1534-field_19-container button,
 div.wpforms-container-full .wpforms-form button[type=submit] {
-  background-color: #DC64F7;
+  background-color: #F66F9B;
   border: none;
   border-radius: 3px;
   color: #FFF;
@@ -101,6 +117,28 @@ div.wpforms-container-full .wpforms-form button[type=submit] {
 }
 
 /* Reservations */
+#first-pods ul,
+#second-pods ul {
+  list-style-type: none;
+  margin: 0 0 1.5em 0;
+}
+
+#first-pods ul li,
+#second-pods ul li {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+#first-pods ul li a,
+#second-pods ul li a {
+  color: #FFF;
+}
+
+#first-pods ul li a:hover,
+#second-pods ul li a:hover {
+  color: #55dbf9;
+}
+
 .page-id-2258 .elementor-widget-container .woocommerce .price {
   display: none !important;
 }
@@ -118,17 +156,44 @@ div.wpforms-container-full .wpforms-form button[type=submit] {
   font-size: 24px !important;
 }
 
-.elementor-widget-woocommerce-product-content span.minimum {
-  color: #55dbf9;
-  font-size: 22px;
-}
-
 .elementor-widget-container .price .duration {
   display: none !important;
 }
 
+.elementor-widget-container ul li .ast-woo-shop-product-description h4.cap {
+  color: #55dbf9;
+  margin-bottom: 1rem;
+}
+
+.elementor-widget-container ul li .ast-woo-shop-product-description h4 {
+  margin-bottom: 1rem;
+}
+
+.page-id-2258 .elementor-products-grid .elementor-widget-container ul li .astra-shop-summary-wrap a.button.product_type_appointment,
+.archive .elementor-products-grid .elementor-widget-container ul li a.button.add_to_cart_button {
+  display: none;
+}
+
+.woocommerce-order .woocommerce-order-details h2 {
+  color: #000;
+}
+
+.woocommerce div.product.post-2319 p.price,
+.woocommerce div.product.post-2345 p.price,
+.woocommerce div.product.post-2336 p.price,
+.woocommerce div.product.post-2342 p.price,
+.woocommerce div.product.post-2331 p.price,
+.woocommerce div.product.post-2322 p.price,
+.woocommerce div.product.post-2253 p.price,
+.woocommerce div.product.post-2337 p.price {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
 /* This corrects WooComerce's responsive column gap wierdness. */
 @media (max-width: 544px) {
+
   .woocommerce-page[class*=columns-] ul.products li.product:nth-child(n),
   .woocommerce[class*=columns-] ul.products li.product:nth-child(n) {
     margin-right: 0px;
@@ -136,6 +201,7 @@ div.wpforms-container-full .wpforms-form button[type=submit] {
 }
 
 @media (max-width: 768px) and (min-width: 545px) {
+
   .woocommerce-page[class*=columns-] ul.products li.product:nth-child(n),
   .woocommerce[class*=columns-] ul.products li.product:nth-child(n) {
     margin-right: 0px;
