@@ -117,25 +117,15 @@ div.wpforms-container-full .wpforms-form button[type=submit] {
 }
 
 /* Reservations */
-#first-pods ul,
-#second-pods ul {
-  list-style-type: none;
-  margin: 0 0 1.5em 0;
+.elementor-widget-wrap .elementor-widget-container h3.elementor-heading-title.elementor-size-default {
+  line-height: 1;
 }
 
-#first-pods ul li,
-#second-pods ul li {
+.elementor-widget-wrap .elementor-widget-container h3.elementor-heading-title.elementor-size-default a {
   font-size: 20px;
-  line-height: 1.5;
 }
 
-#first-pods ul li a,
-#second-pods ul li a {
-  color: #FFF;
-}
-
-#first-pods ul li a:hover,
-#second-pods ul li a:hover {
+.elementor-widget-wrap .elementor-widget-container h3.elementor-heading-title.elementor-size-default a:hover {
   color: #55dbf9;
 }
 
@@ -189,6 +179,10 @@ div.wpforms-container-full .wpforms-form button[type=submit] {
   font-size: 1.1rem;
   line-height: 1.5;
   text-align: left;
+}
+
+.woocommerce .single_variation_wrap #wc-stripe-payment-request-wrapper {
+  padding-top: 0;
 }
 
 /* This corrects WooComerce's responsive column gap wierdness. */
